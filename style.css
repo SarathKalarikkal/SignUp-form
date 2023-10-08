@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General Styles */
+a {
+    color: #0078e7;
+    text-decoration: none;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0078e7;
+}
+
+/* Form Styles */
+form {
+    width: 420px;
+    max-height: 650px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.322);
+}
+
+/* Labels */
+form label {
+    color: #2e2e2e;
+    font-size: 12px;
+    font-weight: 500;
+}
+form label[id="dob"]{
+    margin-bottom: 5px;
+}
+
+form h2 {
+    color: #0078e7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Group Styles */
+form .input-group {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    opacity: 0.8;
+}
+/* Full Name Label in Input Group */
+.input-group .labelname {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    color: rgb(59, 59, 59);
+}
+
+
+/* Input Styles */
+form input {
+    height: 35px;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    width: 100%;
+}
+
+/* Input Box Shadow */
+input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+    border: 1px solid #0078e7;
+}
+
+/* Gender Group Styles */
+.gender-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+}
+.gender-group input{
+    width: 12px;
+    cursor: pointer;
+}
+.gender-group input,label{
+    margin-right: 20px;
+}
+#Gender-head {
+    font-weight: 600;
+}
+
+/* Agreement Group Styles */
+.agree-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.agree-group input {
+    margin-right: 10px;
+    width: 12px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 30px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #0078e7;
+    border: none;
+    outline: none;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #238df1;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Horizontal Line Styles */
+.horizontal-line {
+    margin: 25px 0 5px 0;
+    background-color: #9e9e9e;
+    width: 100%;
+    height: 0.5px;
+    position: relative;
+}
+
+.horizontal-line p {
+    position: absolute;
+    top: -15px;
+    left: 47%;
+    background-color: #ffffff;
+    padding: 8px;
+    color: #9e9e9e;
+}
+
+/* Social Signup Styles */
+.social-signup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaa;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.social-signup:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+}
+
+.social-signup img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-signup p {
+    margin-left: 25%;
+}
+
+/* Media queries */
+@media (max-width: 479px) {
+    form {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 330px) {
+    form {
+        width: 100%;
+        height: 100vh;
+    }
+}

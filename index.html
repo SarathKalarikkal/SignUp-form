@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="form-container">
+    <form>
+        <h2>SIGNUP</h2>
+        
+        <div class="input-group">
+            <img class="icon" src="logo/person_FILL0_wght400_GRAD0_opsz24.png" alt="Account" width="15" height="15">
+            <label for="fullname" class="labelname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="input-group">
+            <img class="icon" src="logo/mail_FILL0_wght400_GRAD0_opsz24.png" alt="Email" width="15" height="15">
+            <label for="email" class="labelname">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <img class="icon" src="logo/visibility_off_FILL0_wght400_GRAD0_opsz24.png" alt="Password" width="15" height="15">
+            <label for="password" class="labelname">Password</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="12" required>
+        </div>
+
+        <div class="input-group">
+            <img class="icon" src="logo/visibility_off_FILL0_wght400_GRAD0_opsz24.png" alt="Confirm Password" width="15" height="15">
+            <label for="confirm-password" class="labelname">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="12" required>
+        </div>
+
+        <div class="input-group">
+            <label for="dob" class="labelname">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="gender-group">
+            <label id="Gender-head">Gender:</label>
+            <input type="radio" id="male" class="category" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" class="category" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        
+        <div class="agree-group">
+            <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+            <label for="termsCheckbox">I have read and accept the <a href="terms_and_conditions.html" target="_blank">Terms and Conditions</a></label>
+        </div>
+
+        <button type="submit">Signup</button>
+        
+        <p>Already have an account? <a href="/">Login</a></p>
+        
+        <div class="horizontal-line">
+            <p>or</p>
+        </div>
+        
+        <div class="social-signup">
+            <img src="logo/Google-logo.png" alt="Google" width="40" height="40">
+            <p>Login with Google</p>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
